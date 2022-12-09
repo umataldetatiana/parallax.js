@@ -3,26 +3,20 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <!-- <link> - define uma relação entre o documento HTML atual e outro recurso.
-    rel="icon" - especifica que o link é para um ícone do site.
-    type="image/svg+xml" - especifica o tipo de mídia do recurso vinculado. 
-    No caso, trata-se de um arquivo SVG (Scalable Vector Graphics).
-    href="/vite.svg" - especifica o caminho do arquivo SVG que será usado como ícone do site.
-     -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" /> >
 
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index.css" />
     <title>site com movimento: Parallax resolve!S</title>
 </head>
 
 <body>
 
-    <div data-relative-input="true" id="scene"> 
+    <div data-relative-input="true" id="scene">
         <!-- data-relative-input="true" - especifica que a entrada será relativa à posição 
             do mouse do usuário. id="scene" - define um identificador exclusivo para o elemento div,
             que pode ser usado para aplicar estilos ou referências em JavaScript. -->
-        <div data-depth="0.2" data-scalar-y="10" data-scalar-x="25"> 
-         <!-- data-depth="0.2" - define a profundidade do elemento div em relação à cena. Isso determina como o
+        <div data-depth="0.2" data-scalar-y="10" data-scalar-x="25">
+            <!-- data-depth="0.2" - define a profundidade do elemento div em relação à cena. Isso determina como o
             elemento será afetado pelo movimento do mouse do usuário.
             data-scalar-y="10" - define o quanto o eixo Y será escalado em relação ao movimento do mouse.
             data-scalar-x="25" - define o quanto o eixo X será escalado em relação ao movimento do mouse.

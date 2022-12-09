@@ -11,18 +11,30 @@
 
 <body>
 
+    <div  data-pointer-events="true">
+        <h2> essa e a primeira camada</h2>
+
+    </div>
+
     <div data-relative-input="true" id="scene">
         <!-- data-relative-input="true" - especifica que a entrada será relativa à posição 
             do mouse do usuário. id="scene" - define um identificador exclusivo para o elemento div,
             que pode ser usado para aplicar estilos ou referências em JavaScript. -->
-        <div data-depth="0.2" data-scalar-y="10" data-scalar-x="25">
+        <div data-depth="0.2" data-friction-x="10" data-scalar-y="10" data-scalar-x="25" data-origin-x="0.5">
             <!-- data-depth="0.2" - define a profundidade do elemento div em relação à cena. Isso determina como o
             elemento será afetado pelo movimento do mouse do usuário.
-            data-scalar-y="10" - define o quanto o eixo Y será escalado em relação ao movimento do mouse.
-            data-scalar-x="25" - define o quanto o eixo X será escalado em relação ao movimento do mouse.
             Esses atributos de dados especificam como o elemento div será afetado pelo movimento do mouse. 
             A profundidade determina a intensidade do efeito, enquanto os valores de scalarX e scalarY determinam
             a direção e a intensidade do movimento.S -->
+            <!--data-scalar-y="10" - define o quanto o eixo Y será escalado em relação ao movimento do mouse.-->
+            <!--data-scalar-x="25" - define o quanto o eixo X será escalado em relação ao movimento do mouse.-->
+            <!--data-friction-x="10" - o que significa que ele tem um certo grau de fricção em relação ao eixo X quando é movido pelo usuário. Isso pode ser usado para criar um efeito de paralaxe, onde elementos da página se movem em relação uns aos outros quando o usuário move o mouse ou a tela. É provável que esse código seja usado em conjunto com outros elementos-->
+            <!--data-origin-x="0.5" - elemento é desenhado com um ponto de origem no meio dele em relação ao eixo X. Isso pode ser usado para controlar como o elemento se comporta quando é movido pelo usuário, por exemplo, se ele se move a partir do centro ou de um dos extremos. É provável que esse código seja usado em conjunto com outros elementos-->
+            <!--data-limit-x="0.5" - tem um limite de movimento de 50% em relação ao seu tamanho original em relação ao eixo X. Isso pode ser usado para controlar até que ponto o elemento pode ser movido pelo usuário, por exemplo, se ele pode ser movido livremente ou se há um limite para sua movimentação-->
+            <!--data-scalar-x="15" - o que significa que o elemento é escalado em 15 vezes o seu tamanho original em relação ao eixo X. Isso pode ser usado para controlar como o elemento se comporta quando é movido pelo usuário, por exemplo, se ele se move em uma escala maior ou menor do que os outros elementos da página. -->
+            <!--data-calibrate-x="15" - o que significa que o elemento é calibrado em 15 vezes o seu tamanho original em relação ao eixo X. Isso pode ser usado para ajustar o comportamento do elemento quando é movido pelo usuário, por exemplo, para garantir que ele se mova de maneira suave e precisa-->
+            <!--data-precision="15" - significa que o elemento é movido com precisão de 15 pixels quando é movido pelo usuário. Isso pode ser usado para controlar a precisão do movimento do elemento, garantindo que ele se mova de maneira suave e precisa.-->
+            <!--data-pointer-events="true"   que significa que o elemento está habilitado para receber eventos de ponteiro, como cliques do mouse ou toques na tela. Isso permite que o elemento seja interativo, o que pode ser usado para adicionar funcionalidades dinâmicas à página.-->
             <h2> essa e a primeira camada</h2>
             <!-- <img src="quadrinho4.png"/> -->
         </div>
